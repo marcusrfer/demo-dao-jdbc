@@ -13,6 +13,7 @@ public class AppDaoJdbc {
         //System.out.println(seller);
 
         SellerDAO sellerDAO = DaoFactory.createSellerDao();
+        System.out.println("<--- Test 1: Seller FindById --->");
         Seller seller = sellerDAO.findById(3);
         System.out.println(seller);
 

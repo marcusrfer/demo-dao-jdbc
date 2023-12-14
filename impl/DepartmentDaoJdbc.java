@@ -3,9 +3,13 @@ package demo_dao_jdbc.impl;
 import demo_dao_jdbc.dao.DepartmentDAO;
 import demo_dao_jdbc.entities.Department;
 
+import java.sql.Connection;
 import java.util.List;
 
 public class DepartmentDaoJdbc implements DepartmentDAO {
+    public DepartmentDaoJdbc(Connection connection) {
+    }
+
     @Override
     public void insert(Department obj) {
 
